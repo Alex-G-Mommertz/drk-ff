@@ -2,5 +2,15 @@
 // css, scss, image, fonts etc.
 import bulma from "./assets/scss/bulma.scss"; // main bulma styles
 
-console.log("Hallo Welt!");
-console.log("Tschüss")
+window.onscroll = function() {scrollFunction()};
+
+var nav = document.getElementById("main-nav")
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    nav.classList.add('shrinked');
+   
+  } else {
+    nav.classList.remove('shrinked');
+  }
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Hey November';
+    src: url('fonts/Hey-November.eot');
+    src: url('fonts/Hey-November.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Hey-November.woff2') format('woff2'),
+         url('fonts/Hey-November.woff') format('woff'),
+         url('fonts/Hey-November.ttf')  format('truetype'),
+         url('fonts/Hey-November.svg#Hey November') format('svg');
+}

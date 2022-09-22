@@ -1,8 +1,71 @@
 /* we can use here all scss vars from bulma.scss */
-body {
-  background-color: $primary;
+
+.navbar {
+  height: 120px;
+  transition: .5s all;
+  background-color: rgba($color: #fff, $alpha: 0.6);
 }
 
-p {
-  color: yellow;
+.navbar-item img {
+  max-height: 90%
+
+}
+
+.navbar.shrinked {
+  height: 80px;
+}
+
+.has-special-typo {
+  font-family: 'Hey November';
+  font-weight: 300;
+  font-size: 1.6em;
+}
+
+.headline-typo {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+}
+
+.hero-body .has-special-typo  {
+  font-size: 8em;
+}
+
+.hero-body p {
+  min-width: 400px;
+  line-height: 1.2;
+}
+
+.benefits ul li {
+  padding: 5px 0 ;
+  list-style-type: disc;
+  font-size: 1rem;
+}
+
+.hidden 
+{
+  display: none;
+}
+
+.education .column{ 
+  position: relative
+}
+
+.education .column hr.timeline {
+  position: absolute;
+  background-color: black;
+  width: 95%;
+  top: 28%;
+}
+
+.education .step {
+  max-width: 150px;
+  min-height: 200px;
+  text-align: center;
+
+}
+
+.education .step p {
+  padding-top: 8px;
+  font-size: 1em;
+  font-weight: bold;
 }
