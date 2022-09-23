@@ -52,20 +52,57 @@
 
 .education .column hr.timeline {
   position: absolute;
-  background-color: black;
-  width: 95%;
+  background-color: #ccc;
+  width: 90%;
   top: 28%;
+  left: 5%;
 }
 
 .education .step {
   max-width: 150px;
   min-height: 200px;
   text-align: center;
+z-index: 1;
+}
 
+.info  img {
+  max-width: 60%;
 }
 
 .education .step p {
   padding-top: 8px;
   font-size: 1em;
   font-weight: bold;
+}
+
+@media(max-width: 1020px) {
+  .navbar > .container{
+    max-height: 100% !important;
+  }
+
+  .navbar-brand, .navbar-tabs {
+    max-height: 120px !important;
+    transition: .5s;
+  }
+
+ .shrinked .navbar-brand, .navbar-tabs {
+    max-height: 90px !important;
+  }
+
+}
+
+@media (max-width: 770px) {
+  .education .column  {
+    flex-direction: column;
+  }
+  .education .column hr.timeline {
+    position: absolute;
+    background-color: #ccc;
+    width: 100%;
+    top: 45%;
+    left: 0;
+    transform: rotate(90deg);
+  }
+
+
 }
