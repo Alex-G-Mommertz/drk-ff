@@ -1,5 +1,17 @@
 /* we can use here all scss vars from bulma.scss */
 
+.is-animated {
+  visibility: hidden;
+}
+
+.animated, .js-animated {
+  visibility: visible !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   height: 120px;
   transition: .5s all;
@@ -35,15 +47,41 @@
   line-height: 1.2;
 }
 
-.benefits ul li {
-  padding: 5px 0 ;
+
+.benefits ul {
   list-style-type: disc;
-  font-size: 1rem;
 }
 
-.hidden 
+.benefits ul li {
+  padding: 5px 0 ;
+
+  font-size: .8rem;
+  transition: 0.4s;
+}
+
+.hidden {
+  max-height: 0;
+
+}
+
+.show {
+  max-height: 100%;
+  padding: 5px 30px !important;
+ 
+}
+
+.panel 
 {
-  display: none;
+  padding: 0px 30px;
+overflow: hidden;
+transition: max-height .6s ease-out;
+display: flex;
+flex-direction: column;
+align-items: center;
+box-shadow: 0 10px 40px 10px rgb(51 51 79 / 9%);
+background-color: #fff;
+border-radius: 10px;
+
 }
 
 .education .column{ 
